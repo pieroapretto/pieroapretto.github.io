@@ -1,5 +1,6 @@
 body {
   position: relative;
+  padding: 10px;
   width: 100%;
   min-height: auto;
   -webkit-background-size: cover;
@@ -86,4 +87,9 @@ h1, #announcer {
   font-weight: 900;
   text-align: center;
   text-shadow: 2px 2px #000000;
+}
+
+#back_button {
+  height: 50px;
+  float: left;
 }

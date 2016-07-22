@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function(){
-  // $('[data-stack]').hover(function(){ $(this).css('background-color', '#33a0ff');}, function(){ $(this).css('background-color', '#f0f8ff');});
+  $('#back_button').hover(function(){ $(this).css('opacity', '0.7');}, function(){ $(this).css('opacity', '1');});
   var block = null;
   var turns = 0;
   $('[data-stack]').on('click', function(){

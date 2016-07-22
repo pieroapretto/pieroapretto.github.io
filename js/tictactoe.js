@@ -54,6 +54,6 @@ $(document).on('ready', function() {
         }
     }
 
-    $('[data-cell]').hover(function(){ $(this).css('background-color', '#1278FF');}, function(){ $(this).css('background-color', 'transparent');
-    });
+    $('[data-cell]').hover(function(){ $(this).css('background-color', '#1278FF');}, function(){ $(this).css('background-color', 'transparent');});
+		$('#back_button').hover(function(){ $(this).css('opacity', '0.7');}, function(){ $(this).css('opacity', '1');});
 });
