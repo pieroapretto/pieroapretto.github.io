@@ -88,6 +88,9 @@ h1, #announce-winner {
     padding-left: 10px;
     padding-top: 10px;
   }
+  h1 {
+    font-size: 20px;
+  }
 }
 
 #intro_paragraph {

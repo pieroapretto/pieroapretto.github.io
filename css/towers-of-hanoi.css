@@ -104,11 +104,9 @@ h1, #announcer {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .game {
+  #game {
     text-align: center;
-    margin: auto;
     width: 300px;
-    height: 300px;
   }
   #back_button {
     height: 25px;
@@ -134,6 +132,9 @@ h1, #announcer {
   h1 {
     font-size: 20px;
     margin-top: 50px;
+  }
+  body {
+    text-align: center;
   }
 }
 
