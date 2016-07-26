@@ -89,3 +89,7 @@ h1, #announce-winner {
   color: white;
   text-align: center;
 }
+
+#announce-winner {
+  padding-bottom: 30px;
+}
