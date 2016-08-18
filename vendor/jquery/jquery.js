@@ -338,7 +338,7 @@ jQuery.extend( {
 	},
 
 	// Workarounds based on findings by Jim Driscoll
-	// http://weblogs.java.net/blog/driscoll/archive/2009/09/08/eval-javascript-global-context
+	// http://weblogs.java.net/heminotes_blog/driscoll/archive/2009/09/08/eval-javascript-global-context
 	globalEval: function( data ) {
 		if ( data && jQuery.trim( data ) ) {
 
@@ -6844,7 +6844,7 @@ var
 	// swappable if display is none or starts with table except
 	// "table", "table-cell", or "table-caption"
 	// see here for display values:
-	// https://developer.mozilla.org/en-US/docs/CSS/display
+	// https://developer.mozilla.org/en-US/docs/heminotes_css/display
 	rdisplayswap = /^(none|table(?!-c[ea]).+)/,
 	rnumsplit = new RegExp( "^(" + pnum + ")(.*)$", "i" ),
 
@@ -8707,7 +8707,7 @@ jQuery.extend( {
 
 				// elem.tabIndex doesn't always return the
 				// correct value when it hasn't been explicitly set
-				// http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
+				// http://fluidproject.org/heminotes_blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
 				// Use proper attribute retrieval(#12072)
 				var tabindex = jQuery.find.attr( elem, "tabindex" );
 
