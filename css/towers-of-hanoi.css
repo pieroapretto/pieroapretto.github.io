@@ -8,7 +8,7 @@ body {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../heminotes_img/game_wallpaper.png');
+  background-image: url('../img/game_wallpaper.png');
   filter: alpha(opacity=90);
   /*text-align: center;*/
   color: white;
