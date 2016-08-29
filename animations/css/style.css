@@ -161,3 +161,11 @@ body{
   z-index: 5;
   font-size: 75px;
 }
+
+#logo {
+  height: 40px;
+  float: right;
+  right: 5%;
+  top: 5%;
+  margin: 20px;
+}

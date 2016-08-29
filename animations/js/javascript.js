@@ -20,6 +20,7 @@ $(document).ready(function(){
       $slide4Img = $('#slide4 img'),
       $slide4Text = $('#legal_copy2'),
       $slide4Div = $('#learnMore'),
+      
       $slide5 = $('#slide5'),
       $slide5Exit = $('#slide5 span');
 
