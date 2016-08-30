@@ -18,47 +18,49 @@ $(document).ready(function(){
       $slide4 = $("#slide4"),
       $slide4Header = $("#slide4 h1"),
       $slide4Img = $('#slide4 img'),
-      $slide4Text = $('#legal_copy2'),
+      $slide4Legal = $('#legal_copy2'),
       $slide4Div = $('#learnMore'),
-      
+
       $slide5 = $('#slide5'),
-      $slide5Exit = $('#slide5 span');
+      $slide5Exit = $('#slide5 span'),
+      $logo = $('#logo');
 
   var tl = new TimelineLite();
+  var rollOver = new TimelineLite();
   var tl2 = new TimelineLite();
 
-  tl.from($slide1Header, 0.5, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
+   tl.set($slide5, {autoAlpha: 0, y: '+=1000'})
+     .from($slide1Header, 0.5, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide1Img, 0.5, {x: '-=500', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide1Text, 1, {autoAlpha:0, ease:SlowMo.easeInOut})
-     .to($slide1Header, 0.5, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 3, onComplete: displayNone})
+     .to($slide1Header, 0.5, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 2, onComplete: displayNone})
      .to($slide1Text, 0.5, {autoAlpha:0, ease:SlowMo.easeInOut}, "-=0.5")
 
      .to($slide1Img, 0.75, {onUpdate: upAndLeft})
-     .from($slide2Img, 0.5, {autoAlpha:0, ease:Circ.easeInOut}, "-=0.7")
+     .from($slide2Img, 0.5, {autoAlpha:0, ease:Circ.easeInOut}, "-=0.75")
      .from($slide2Header, 0.5, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide2Text, 0.5, {scale:0.5, autoAlpha:0, ease:SlowMo.easeInOut}, "-=0.5")
 
-     .to($slide2, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 3})
-     .from($slide3Header, 1, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
+     .to($slide2, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 2})
+     .from($slide3Header, 1, {x: '+=1000', autoAlpha:0, ease:Back.easeInOut}, "-=1")
 
-     .to($slide3, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 3})
+     .to($slide3, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 2})
      .from($slide4Img, 1, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide4Header, 1, {x: '-=1000', autoAlpha:0, ease:Circ.easeInOut}, '-=1')
-     .from($slide4Text, 0.5, {scale:0.5, autoAlpha:0, ease:SlowMo.easeInOut}, "-=1")
+     .from($slide4Legal, 1, {y: '+=1000', autoAlpha:0, ease:SlowMo.easeOut, delay: 0.5})
+     .from($slide4Div, 1, {y: '+=1000', autoAlpha:0, ease:SlowMo.easeOut}, "-=1");
 
-     .from($slide4Div, 0.5, {scale:0.5, autoAlpha:0, ease:SlowMo.easeInOut}, "-=1");
+     $slide4Legal.on('click', function(){
+       rollOver.to($slide4, 1, {autoAlpha:0, y: '-=1000', ease:SlowMo.easeInOut})
+               .to($logo, 0.5, {autoAlpha: 0}, '-=1')
+               .to($slide5, 1, {autoAlpha:1, y: '-=1000', ease:SlowMo.easeInOut}, '-=2');
+     });
 
-     var rollOver = TweenMax.to($slide5, 1, {scale:0.5, autoAlpha:1, ease:SlowMo.easeInOut});
-     $slide4Div.onclick = function(){
-       rollOver.restart();
-     }
-
-     $slide5Exit.onclick = function(){
-       tl2.to($slide5, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 1})
-          .from($slide4Img, 1, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
-          .from($slide4Header, 1, {x: '-=1000', autoAlpha:0, ease:Circ.easeInOut}, '-=1')
-          .from($slide4Text, 0.5, {scale:0.5, autoAlpha:0, ease:SlowMo.easeInOut}, "-=1");
-     }
+     $slide5Exit.on('click', function(){
+       tl2.to($slide5, 1, {autoAlpha:0, y: '+=1000', ease:SlowMo.easeInOut})
+          .to($slide4, 1, {autoAlpha:1, y: '+=1000', ease:SlowMo.easeInOut}, '-=1')
+          .to($logo, 0.5, {autoAlpha: 1}, '-=1');
+     });
 
 
    function displayNone() {
