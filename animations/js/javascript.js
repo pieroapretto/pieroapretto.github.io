@@ -53,13 +53,13 @@ $(document).ready(function(){
      $slide4Legal.on('click', function(){
        rollOver.to($slide4, 1, {autoAlpha:0, y: '-=1000', ease:SlowMo.easeInOut})
                .to($logo, 0.5, {autoAlpha: 0}, '-=1')
-               .to($slide5, 1, {autoAlpha:1, y: '-=1000', ease:SlowMo.easeInOut}, '-=2');
+               .to($slide5, 1, {autoAlpha:1, y: '-=1000', ease:SlowMo.easeInOut}, '-=1.2');
      });
 
      $slide5Exit.on('click', function(){
        tl2.to($slide5, 1, {autoAlpha:0, y: '+=1000', ease:SlowMo.easeInOut})
-          .to($slide4, 1, {autoAlpha:1, y: '+=1000', ease:SlowMo.easeInOut}, '-=1')
-          .to($logo, 0.5, {autoAlpha: 1}, '-=1');
+          .to($slide4, 1, {autoAlpha:1, y: '+=1000', ease:SlowMo.easeInOut}, '-=1.2')
+          .to($logo, 0.5, {autoAlpha: 1}, '-=1.2');
      });
 
 
