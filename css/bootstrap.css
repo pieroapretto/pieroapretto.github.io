@@ -1584,8 +1584,7 @@ pre code {
 }
 .container {
   padding-right: 30px;
-  margin-right: 0px;
-  margin-left: 30px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .container {

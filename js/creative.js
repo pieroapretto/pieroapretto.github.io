@@ -21,7 +21,8 @@
         $('.navbar-toggle:visible').click();
     });
 
-    $('#mainNav').affix({
+    // Offset for Main Navigation
+    $('nav').affix({
         offset: {
             top: 100
         }
