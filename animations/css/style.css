@@ -1,19 +1,26 @@
 body{
-  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI";
   color:white;
   margin: auto;
 }
 
 #frame {
   background-color:#000000;
-  position:relative;
-  -webkit-backface-visibility:hidden;
+  position: relative;
+  -webkit-backface-visibility: hidden;
   width: 720px;
   height: 640px;
   overflow:hidden;
   float:left;
-  top: 0px;
   margin: 0px;
+}
+
+@media (min-width: 800px) {
+  #frame {
+    zoom: 70%;
+    -moz-transform: scale(0.7);
+    -moz-transform-origin: 0 0;
+  }
 }
 
 .slide {
@@ -102,19 +109,19 @@ body{
 
 #slide4 h1 {
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 5%;
-  width: 40%;
+  width: 50%;
   height: 55%;
   margin: 10px;
   z-index: 4;
-  font-size: 40px;
   font-weight: 100;
+  line-height: 1.2;
 }
 
 #slide4 img {
   position: absolute;
-  left: 50%;
+  left: 55%;
   top: 15%;
   width: 40%;
   z-index: 4;
@@ -164,7 +171,7 @@ body{
 }
 
 #logo {
-  height: 40px;
+  height: 50px;
   float: right;
   right: 5%;
   top: 5%;
@@ -178,4 +185,14 @@ body{
 a {
   text-decoration: underline;
   color: white;
+}
+
+.highlightSmall {
+  color: #0099ff;
+  font-size: 65px;
+}
+
+.highlightBig {
+  color: #0099ff;
+  font-size: 70px;
 }

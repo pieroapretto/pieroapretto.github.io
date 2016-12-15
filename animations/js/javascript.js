@@ -25,11 +25,13 @@ $(document).ready(function(){
       $slide5Exit = $('#slide5 span'),
       $logo = $('#logo');
 
-  var tl = new TimelineLite();
+  var mainTimeline = new TimelineLite({onComplete:function(){
+    // this.restart();
+  }});
   var rollOver = new TimelineLite();
-  var tl2 = new TimelineLite();
+  var rollBack = new TimelineLite();
 
-   tl.set($slide5, {autoAlpha: 0, y: '+=1000'})
+  mainTimeline.set($slide5, {autoAlpha: 0, y: '+=1000'})
      .from($slide1Header, 0.5, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide1Img, 0.5, {x: '-=500', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide1Text, 1, {autoAlpha:0, ease:SlowMo.easeInOut})
@@ -57,9 +59,9 @@ $(document).ready(function(){
      });
 
      $slide5Exit.on('click', function(){
-       tl2.to($slide5, 1, {autoAlpha:0, y: '+=1000', ease:SlowMo.easeInOut})
-          .to($slide4, 1, {autoAlpha:1, y: '+=1000', ease:SlowMo.easeInOut}, '-=1.2')
-          .to($logo, 0.5, {autoAlpha: 1}, '-=1.2');
+       rollBack.to($slide5, 1, {autoAlpha:0, y: '+=1000', ease:SlowMo.easeInOut})
+               .to($slide4, 1, {autoAlpha:1, y: '+=1000', ease:SlowMo.easeInOut}, '-=1.2')
+               .to($logo, 0.5, {autoAlpha: 1}, '-=1.2');
      });
 
 

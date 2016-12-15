@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Animation Test 1!</title>
+    <title>GSAP HTML5 Ad</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/animate.css">
 
+    // load javascript first to prevent initial overlap of slide content
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineLite.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
@@ -14,35 +15,48 @@
   </head>
   <body>
   <div id="frame">
-    <img id="logo" src="img/logo.png" />
+    <img id="logo" src="img/logo.png"/>
+
     <div id="slide1" class="slide">
       <h1 id="copy1">All day battery + water &#38; shatter-resistant.</h1>
       <img id="phone1" src="img/phone2.jpg" />
-      <p id="legal_copy1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Lorem ipsum dolor sit.</p>
+      <p id="legal_copy1">Company X is not responsible for, and expressly disclaims all liability for, damages of any kind arising out of use,
+        reference to, or reliance on any information contained within the site. While the information contained within the site is
+        periodically updated, no guarantee is given that the information provided in this Web site is correct, complete, and up-to-date.
+        Company X is not responsible for the accuracy or content of information contained in these sites.</p>
     </div>
+
+
     <div id="slide2" class="slide">
       <h1 id="copy2">Take the conversation to thrilling, new places.</h1>
       <img id="phone2" src="img/phone2.png" />
       <p>Device screen images simulated</p>
     </div>
+
+
     <div id="slide3" class="slide">
       <h1 id="copy3">Get the phone as bold as you.</h1>
     </div>
+
+
     <div id="slide4" class="slide">
-      <h1 id="copy4">Fancy new <span style="color: #0099ff; font-size: 70px;">phone</span>, consectetuer adipiscing elit. Aenean. Lorem ipsum dolor sit.</h1>
+      <h1 id="copy4">Get the <br><span class="highlightBig">fancy</span><span class="highlightSmall"> phone</span> for $0 down* with someone <span class="highlightSmall">exclusively</span><br> that you know.</h1>
       <img id="phone3" src="img/phone3.jpg" />
-      <a href="#"><p id="legal_copy2">*Legal link. Click on me to see a rollover effect.</p></a>
+      <a href="#"><p id="legal_copy2">*Legal link.<span style="color: #0099ff;"> Click on me</span> to see a rollover effect.</p></a>
       <div id="learnMore">
-        <a href="http://www.att.com/att/planner" target="_blank">
+        <a href="https://www.att.com/shop/wireless/devices/samsung.html" target="_blank">
           <br>
           <p>Learn More</p>
         </a>
       </div>
     </div>
+
+
     <div id="slide5" class="slide">
       <span>X</span>
       <p id="legal_copy3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.</p>
     </div>
   </div>
+
   </body>
 </html>
