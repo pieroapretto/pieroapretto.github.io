@@ -2,7 +2,54 @@
 body {
   color: white;
   margin: auto;
+  padding: 0px !important;
 }
+
+@media (min-width: 1050px) {
+  @-moz-document url-prefix() {
+    #frame {
+      -moz-transform: scale(0.5);
+      -moz-transform-origin: 0 0;
+      top: 300px !important;
+      left: 80px !important;
+      margin: 0px !important;
+    }
+  }
+  #frame {
+    zoom: 50% !important;
+    top: 620px;
+    margin: 0px !important;
+    left: 165px;
+  }
+  #previewBackground {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1049px) {
+  #frame {
+    margin: 100px 0px 0px 30px !important;
+    top: 0px;
+    left: 0px;
+    -moz-transform: scale(0.7);
+    -moz-transform-origin: 0 0;
+  }
+}
+
+/*IE compability*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #frame {
+    top: 300px;
+    left: 80px;
+  }
+}
+@supports (-ms-accelerator:true) {
+  #frame {
+    top: 300px;
+    left: 80px;
+  }
+}
+
 
 #frame {
   background-color:#000000;
@@ -14,24 +61,9 @@ body {
   float: left;
   margin: 0px;
   z-index: 999;
-  margin: 100px 0px 0px 30px;
   zoom: 70%;
   color: #fff;
   font-family: "Segoe UI";
-}
-
-@media (min-width: 1050px) {
-  #frame {
-     zoom: 50% !important;
-    -moz-transform: scale(0.7);
-    -moz-transform-origin: 0 0;
-    top: 620px !important;
-    margin: 0px !important;
-    left: 165px !important;
-  }
-  #previewBackground {
-    display: block !important;
-  }
 }
 
 .slide {
