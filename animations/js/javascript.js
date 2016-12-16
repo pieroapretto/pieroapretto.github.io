@@ -35,7 +35,7 @@ $(document).ready(function(){
      .from($slide1Header, 0.5, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide1Img, 0.5, {x: '-=500', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide1Text, 1, {autoAlpha:0, ease:SlowMo.easeInOut})
-     .to($slide1Header, 0.5, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 2, onComplete: displayNone})
+     .to($slide1Header, 0.5, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 3, onComplete: displayNone})
      .to($slide1Text, 0.5, {autoAlpha:0, ease:SlowMo.easeInOut}, "-=0.5")
 
      .to($slide1Img, 0.75, {onUpdate: upAndLeft})
@@ -43,10 +43,10 @@ $(document).ready(function(){
      .from($slide2Header, 0.5, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide2Text, 0.5, {scale:0.5, autoAlpha:0, ease:SlowMo.easeInOut}, "-=0.5")
 
-     .to($slide2, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 2})
+     .to($slide2, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 3})
      .from($slide3Header, 1, {x: '+=1000', autoAlpha:0, ease:Back.easeInOut}, "-=1")
 
-     .to($slide3, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 2})
+     .to($slide3, 1, {autoAlpha:0, x: '-=1000', ease:Circ.easeInOut, delay: 3})
      .from($slide4Img, 1, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
      .from($slide4Header, 1, {x: '-=1000', autoAlpha:0, ease:Circ.easeInOut}, '-=1')
      .from($slide4Legal, 1, {y: '+=1000', autoAlpha:0, ease:SlowMo.easeOut, delay: 0.5})
