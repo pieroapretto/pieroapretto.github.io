@@ -36,6 +36,17 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  #frame {
+    margin: 150px 0px 0px 25px !important;
+    top: 0px;
+    left: 0px;
+    zoom: 45% !important;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+  }
+}
+
 /*IE compability*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #frame {
@@ -110,7 +121,6 @@ body {
   left: 50%;
   top: 15%;
   width: 40%;
-  /*transform: transform(-10%, -10%);*/
   z-index: 3;
   font-size: 50px;
   font-weight: 100;
@@ -119,11 +129,8 @@ body {
 #slide2 img {
   position: absolute;
   top: 10%;
-  /*left: 5%;*/
-  /*width: 75%;*/
   height: 75%;
   margin: 10px;
-  /*transform: matrix(1, 0, 0, 1, -240, -150);*/
   z-index: 3;
 }
 
@@ -132,8 +139,6 @@ body {
   bottom: 0;
   left: 2%;
   width: 80%;
-  /*height: 200px;*/
-  /*transform: matrix(1, 0, 0, 1, -240, -150);*/
   z-index: 3;
   font-size: 16px;
 }
