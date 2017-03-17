@@ -2,10 +2,6 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Piero Pretto">
     <meta property="og:type" content="article"/>
@@ -18,11 +14,10 @@
     <title>Piero Pretto - Front End Web Developer</title>
 
     <!-- Bootstrap Core CSS -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
-
     <!-- Theme CSS -->
-    <link href="css/creative.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/creative.css">
+    <link href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" rel="stylesheet">
 
 </head>
 
@@ -35,23 +30,22 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <!-- <img id="portfolio_icon" src="img/HTML5_CSS_Javascript.png" class="img-responsive" alt="HTML5_CSS_Javascript"> -->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                <ul role="list" class="nav navbar-nav navbar-right">
+                    <li role="listitem">
+                        <a class="page-scroll" href="#about" alt="scroll to about section">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#services">My Work</a>
+                    <li role="listitem">
+                        <a class="page-scroll" href="#services" alt="scroll to portfolio section">My Work</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Resume</a>
+                    <li role="listitem">
+                        <a class="page-scroll" href="#portfolio" alt="scroll to resume section">Resume</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <li role="listitem">
+                        <a class="page-scroll" href="#contact" alt="scroll to contact section">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +61,7 @@
                     <h1 id="homeHeading">Piero A. Pretto</h1>
                     <hr id="homeHr">
                     <p id="homeParagraph">I love to build.</p>
-                    <a href="#about" class="btn btn-primary btn-xl page-scroll">About Me</a>
+                    <a href="#about" class="btn btn-primary btn-xl page-scroll" alt="scroll to about section">About Me</a>
                 </div>
             </div>
         </div>
@@ -78,14 +72,16 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading" >Hey There!</h2>
                 <br>
-                <img src="img/me.jpg" class="img_circle" alt="Piero Pretto">
+                <img src="img/me.jpg" class="img_circle" alt="Piero Pretto image">
                 <br>
                 <br>
+                <div role="contentinfo">
                   <p class="text-faded" >I'm a self-taught web developer deeply passionate about web accessibility and front-end JavaScript frameworks.</p>
                   <p class="text-faded" >Hobbies include long walks on the beach, reading many leather bound books, and spending an absurd amount of time at Cherrywood Coffeehouse building web applications.</p>
+                </div>
                 <br>
                 <br>
-                <a href="#portfolio" class="page-scroll btn btn-default btn-xl sr-button">My Work</a>
+                <a href="#portfolio" class="page-scroll btn btn-default btn-xl sr-button" alt="scroll to portfolio section">My Work</a>
             </div>
         </div>
     </section>
@@ -97,9 +93,9 @@
                     <h2 class="section-heading">At Your Service</h2>
                     <hr class="primary">
                     <br>
-                    <hr id="sectionHr">
+                    <hr class="sectionHr">
                     <p><i>"Skill is only developed by hours and hours and hours of beating on your craft."<br><br> - Will Smith</i></p>
-                    <hr id="sectionHr">
+                    <hr class="sectionHr">
                     <br>
                     <br>
                 </div>
@@ -107,31 +103,31 @@
         </div>
         <br>
         <div class="container-fluid">
-            <div class="row">
+            <div role="list" class="row">
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="devicon-html5-plain text-primary sr-icons"></i>
+                    <div role="listitem" class="service-box">
+                        <i role="presentation" class="devicon-html5-plain text-primary sr-icons" aria-hidden="true"></i>
                         <h3>HTML &#38; CSS</h3>
                         <p class="text-muted">I use Bootstrap and jQuery UI to create flexible, responsive and user-friendly applications.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="devicon-javascript-plain text-primary sr-icons"></i>
+                    <div role="listitem" class="service-box">
+                        <i role="presentation" class="devicon-angularjs-plain text-primary sr-icons" aria-hidden="true"></i>
                         <h3>JavaScript</h3>
-                        <p class="text-muted">Functional JavaScript and AJAX methods allow me to preform complex data manipulations in and out of the DOM.</p>
+                        <p class="text-muted">AJAX and Angular's MVC framework allow me to preform complex data manipulations and dynamic view on the front-end.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="devicon-backbonejs-plain text-primary sr-icons"></i>
+                    <div role="listitem" class="service-box">
+                        <i role="presentation" class="devicon-backbonejs-plain text-primary sr-icons" aria-hidden="true"></i>
                         <h3>Backbone.js</h3>
-                        <p class="text-muted">To scale robust applications and handle user interactions, I ulitize the Backbone.js RESTful interface.</p>
+                        <p class="text-muted">To scale robust applications and handle user interactions, I ulitize the Backbone.js REST-consuming interface.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="devicon-nodejs-plain text-primary sr-icons"></i>
+                    <div role="listitem" class="service-box">
+                        <i role="presentation" class="devicon-nodejs-plain text-primary sr-icons" aria-hidden="true"></i>
                         <h3>Node.js</h3>
                         <p class="text-muted">I use Express.js server-side framework to manage things behind the scenes and MongoDB for scability data accessiblity.</p>
                     </div>
@@ -139,14 +135,13 @@
             </div>
         </div>
       <br>
-      <img src="img/preview.jpg" id="facebook_img"/>
     </section>
 
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://dlcc1h28kdoc1.cloudfront.net" class="portfolio-box" target="_blank">
+            <div role="list" class="row no-gutter popup-gallery">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="https://dlcc1h28kdoc1.cloudfront.net" class="portfolio-box" target="_blank" role="link" alt="link to accessible drag and drop app">
                         <img src="img/accessible_app3.jpg" class="img-responsive" alt="accessibility app">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -160,9 +155,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="animations/animation_example1.html" class="portfolio-box" target="_blank">
-                        <img src="img/phone_ad.jpg" class="img-responsive" alt="javascript animation">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="animations/animation_example1.html" class="portfolio-box" target="_blank" role="link" alt="link to JavaScript Animation demo">
+                        <img src="img/phone_ad.jpg" class="img-responsive" alt="javascript animation app">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -175,9 +170,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://react-app-repository.herokuapp.com" class="portfolio-box" target="_blank">
-                        <img src="img/react2.jpg" class="img-responsive" alt="react movie repository">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="https://react-app-repository.herokuapp.com" class="portfolio-box" target="_blank" role="link" alt="link to React Movie Repository">
+                        <img src="img/react2.jpg" class="img-responsive" alt="react movie repository app">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -190,9 +185,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://switter-app.herokuapp.com" class="portfolio-box" target="_blank">
-                        <img src="img/switter2.jpg" class="img-responsive" alt="switter app">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="https://switter-app.herokuapp.com" class="portfolio-box" target="_blank" role="link" alt="link to Backbone.js Switter App">
+                        <img src="img/switter2.jpg" class="img-responsive" alt="backbone.js switter app">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -205,8 +200,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="heminotes/heminotes_main/index.html" class="portfolio-box" target="_blank">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="heminotes/heminotes_main/index.html" class="portfolio-box" target="_blank" role="link" alt="link to HemiNotes App">
                         <img src="img/heminotes3.jpg" class="img-responsive" alt="heminotes">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -220,9 +215,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://d12sh18v9174ct.cloudfront.net" class="portfolio-box">
-                        <img src="img/angular3.jpg" class="img-responsive" alt="AngularJS Address Book">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="https://d12sh18v9174ct.cloudfront.net" class="portfolio-box" role="link" alt="link to Angular.js Address Book">
+                        <img src="img/angular3.jpg" class="img-responsive" alt="Angular.js Address Book">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -235,9 +230,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://rest-garage-app.herokuapp.com" class="portfolio-box" target="_blank">
-                        <img src="img/car_database.jpg" class="img-responsive" alt="Car Database">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="https://rest-garage-app.herokuapp.com" class="portfolio-box" target="_blank" role="link" alt="link to AJAX Car Database">
+                        <img src="img/car_database.jpg" class="img-responsive" alt="AJAX Car Database">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -250,8 +245,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://brelloapp.herokuapp.com/login" class="portfolio-box" target="_blank">
+                <div role="listitem" class="col-lg-4 col-sm-6">
+                    <a href="https://brelloapp.herokuapp.com/login" class="portfolio-box" target="_blank" role="link" alt="link to Node.js Brello App">
                         <img src="img/brello_png.png" class="img-responsive" alt="brello app">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -265,8 +260,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-12" id="portfolio-box-overflow">
-                    <a href="http://tyandslob.com" class="portfolio-box">
+                <div role="listitem" class="col-lg-4 col-sm-12" id="portfolio-box-overflow">
+                    <a href="http://tyandslob.com" class="portfolio-box" role="link" alt="link to Angular.js Pragmatic Media App">
                         <img src="img/tyandslob.jpg" class="img-responsive" alt="Pragmatic Media LLC App">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -289,53 +284,49 @@
             <div class="call-to-action">
                 <h2>Check out my credentials</h2>
                 <br>
-                <a href="resume.html" class="btn btn-default btn-xl sr-button" >View Resume</a>
+                <a href="resume.html" class="btn btn-default btn-xl sr-button" role="link" alt="link to resume">View Resume</a>
             </div>
         </div>
     </aside>
 
     <section id="contact" >
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div role="list" class="row">
+                <div role="listitem" class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
                     <p>For all inquiries, you can reach me at my cell or send an email. I'll get back to you as soon as possible! </p>
                 </div>
-                <div class="col-lg-3 col-lg-offset-1 text-center">
+                <div role="listitem" class="col-lg-3 col-lg-offset-1 text-center">
                   <br>
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p id="footer_info"><a href="mailto:your-email@your-domain.com">pretto417@gmail.com</a></p>
+                    <i role="presentation" class="fa fa-envelope-o fa-3x sr-contact" aria-hidden="true"></i>
+                    <p class="footer_info"><a href="mailto:pretto417@gmail.com" role="link" alt="link to email">pretto417@gmail.com</a></p>
                 </div>
-                <div class="col-lg-2 col-lg-offset-1 text-center">
+                <div role="listitem" class="col-lg-2 col-lg-offset-1 text-center">
                   <br>
-                    <i class="fa fa-github fa-3x sr-contact" aria-hidden="true"></i>
-                    <a href="https://github.com/ASTPMeetup" target="_blank">
-                      <p id="footer_info">GitHub Account</p>
+                    <i role="presentation" class="fa fa-github fa-3x sr-contact" aria-hidden="true"></i>
+                    <a href="https://github.com/ASTPMeetup" target="_blank" role="link" alt="link to Github Account">
+                      <p class="footer_info">GitHub Account</p>
                     </a>
                 </div>
-                <div class="col-lg-3 col-lg-offset-1 text-center">
+                <div role="listitem" class="col-lg-3 col-lg-offset-1 text-center">
                   <br>
-                    <i class="fa fa-linkedin-square fa-3x sr-contact" aria-hidden="true"></i>
-                    <a href="https://www.linkedin.com/in/pieroapretto" target="_blank">
-                      <p id="footer_info">Linkedin Profile</p>
+                    <i role="presentation" class="fa fa-linkedin-square fa-3x sr-contact" aria-hidden="true"></i>
+                    <a href="https://www.linkedin.com/in/pieroapretto" target="_blank" role="link" alt="link to linkedin profile">
+                      <p class="footer_info">Linkedin Profile</p>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Custom Fonts --><!--
-    <link href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" rel="stylesheet"> -->
+    <!-- Custom Fonts -->
+    <link href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<!--     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
-
-            <!-- jQuery -->
-<!--     // <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
