@@ -26,12 +26,13 @@ body {
   }
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 500px) {
   #frame {
-    margin: 100px 0px 0px 30px !important;
+    margin: 150px 0px 0px 25px !important;
     top: 0px;
     left: 0px;
-    -moz-transform: scale(0.7);
+    zoom: 45% !important;
+    -moz-transform: scale(0.5);
     -moz-transform-origin: 0 0;
   }
 }
