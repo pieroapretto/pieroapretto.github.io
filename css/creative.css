@@ -421,7 +421,7 @@ body {
   font-size: 4em;
 }
 
-#footer_info {
+.footer_info {
   line-height: 3;
 }
 
@@ -453,7 +453,7 @@ body {
   margin: 20px;
 }
 
-#sectionHr {
+.sectionHr {
   border-color: #737373;
   border-width: 2px;
   max-width: 50px;
