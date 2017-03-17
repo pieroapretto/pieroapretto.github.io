@@ -16,7 +16,7 @@ body {
     }
   }
   #frame {
-    zoom: 50% !important;
+    zoom: 75% !important;
     top: 620px;
     margin: 0px !important;
     left: 165px;
@@ -36,7 +36,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #frame {
     margin: 150px 0px 0px 25px !important;
     top: 0px;
