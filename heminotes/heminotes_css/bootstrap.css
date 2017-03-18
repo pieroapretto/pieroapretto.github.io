@@ -306,6 +306,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  border-radius: 5px;
 }
 .img-responsive,
 .thumbnail > img,
@@ -318,6 +319,14 @@ img {
   margin-left: auto;
   margin-right:auto;
 }
+img:hover {
+  transform: scale(1.03);
+  -webkit-transition: transform .5s; /* Safari */
+  transition: transform .5s;
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+}
+
 .img-rounded {
   border-radius: 0px;
 }
@@ -335,7 +344,7 @@ img {
 }
 .img-circle {
   border-radius: 50%;
-  width: 200px; 
+  width: 200px;
   height: 200px;
   padding: 10px;
 }
@@ -403,11 +412,14 @@ h6 .small,
 h1,
 .h1,
 h2,
-.h2,
-h3,
-.h3 {
+.h2 {
   margin-bottom: 5px;
   margin-top: 5px;
+}
+h3,
+.h3 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 h1 small,
 .h1 small,
@@ -2027,8 +2039,13 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
+  transform: scale(1.05);
   color: #A4007B;
   text-decoration: none;
+  -webkit-transition: transform .5s; /* Safari */
+  transition: transform .5s;
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
 }
 .btn:active,
 .btn.active {
@@ -3489,6 +3506,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #eee;
+  transform: scale(1.05);
+  -webkit-transition: transform .5s; /* Safari */
+  transition: transform .5s;
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
 }
 .nav > li.disabled > a {
   color: #999;
@@ -4008,7 +4030,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
-  
+
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -4524,7 +4546,7 @@ a.thumbnail.active {
   color: #843534;
 }
   }
-  
+
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -5872,7 +5894,7 @@ button.close {
 			color: #FFFFFF;
 		}
   }
-.social { 
+.social {
   margin-bottom: 5px;
 }
 #first {
@@ -5894,7 +5916,7 @@ footer {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 .contain {
-	
+
 }
 
 
@@ -5925,7 +5947,7 @@ header {
 }
 
 .navbar-nav {
-     float: right; 
+     float: right;
 }
 .item1 {
 	font-size: 13px;
