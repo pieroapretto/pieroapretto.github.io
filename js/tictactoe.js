@@ -20,15 +20,18 @@ $(document).on('ready', function() {
 
     function winningCombo() {
 
+    var dataCell = $('[data-cell');
+
+    //array of winning positions based on data-cell index values on the board
     var winingPositions = [[0,1,2], [3,4,5],[6,7,8], [0,3,6],
                            [1,4,7],[2,5,8],[0,4,8], [2,4,6]];
 
     for(var i = 0; i < 8; i++){
-        var po1 = winingPositions[i][0];
-        var po2 = winingPositions[i][1];
-        var po3 = winingPositions[i][2];
+        var position1 = winingPositions[i][0];
+        var position2 = winingPositions[i][1];
+        var position3 = winingPositions[i][2];
 
-        if ($('[data-cell="'+po1+'"]').text() === playerTurn && $('[data-cell="'+po2+'"]').text() === playerTurn && $('[data-cell="'+po3+'"]').text() === playerTurn){
+        if (dataCell[position1].innerText === playerTurn && dataCell[position2].innerText === playerTurn && dataCell[position3].innerText === playerTurn){
             return true;
             }
         }
@@ -37,20 +40,16 @@ $(document).on('ready', function() {
     function checkForWin() {
         if(winningCombo()) {
             $('#announce-winner').text('Team "' + playerTurn + '" Wins!');
-                $('[data-cell]').each(function() {
-                    $(this).empty();
-                    turns = 0;
-                });
+            $('[data-cell]').empty(); 
+            turns = 0;     
         }
     }
 
     function checkForTie() {
         if(turns === 9) {
             $('#announce-winner').text('It\'s a tie!');
-            $('[data-cell]').each(function() {
-                $(this).empty();
-                turns = 0;
-            });
+            $('[data-cell]').empty(); 
+            turns = 0;
         }
     }
 
