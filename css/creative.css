@@ -467,6 +467,10 @@ body {
   border: 2px solid #ffffff;
   margin: 20px;
 }
+.img-responsive {
+  outline: 2px solid #777;
+  outline-offset: -1px;
+}
 
 .sectionHr {
   border-color: #737373;
@@ -477,5 +481,5 @@ body {
   display: none;
 }
 #portfolio-box-overflow:hover {
-  background: #F05F40;
+  background: #012561;
 }

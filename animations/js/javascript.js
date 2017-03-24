@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 
+
   var $slide1 = $("#slide1"),
       $slide1Header = $("#slide1 h1"),
       $slide1Img = $('#slide1 img'),
@@ -30,6 +31,8 @@ $(document).ready(function(){
   }});
   var rollOver = new TimelineLite();
   var rollBack = new TimelineLite();
+
+  $('#frame').css('display', 'block');
 
   mainTimeline.set($slide5, {autoAlpha: 0, y: '+=1000'})
      .from($slide1Header, 0.5, {x: '+=1000', autoAlpha:0, ease:Circ.easeInOut})
