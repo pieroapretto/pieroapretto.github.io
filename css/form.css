@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding-top: 0 !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Khula', sans-serif !important;
+}
+hr {
+  border-top: 3px solid #eee !important;
+}
+h2 {
+  color: #012561!important;
+}
+
+h3 {
+  padding-bottom:5px;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+}
+
+span {
+  font-size: 18px;
+  color: #A9A9A9;
+  padding-left: 10px;
+}
+
+.thumbnail {
+  background-color: inherit !important;
+  border: none !important;
+}
+
+.float-right {
+  float: right !important;
+  color: #595959;
+  text-transform: uppercase;
+}
+
+.banner_text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.banner_content {
+  text-align: center;
+  opacity: 0.0;
+}
+
+.banner_header {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  color: white;
+  text-shadow: 0 0 10px #000;
+}
+
+.tagline {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #000;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.header_btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #F05F40;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.popular-content {
+  padding-left: 30px;
+  border-left: 1px solid #f2f2f2;
+  height: 268px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature2 {
+  border-left: #ccc solid 1px;
+}
+
+.team_content {
+  background-color: #012561 !important;
+  color: white;
+  border-radius: 5px;
+  padding: 30px;
+  text-align:center;
+}
+
+.media-footer {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: white;
+  text-align:center;
+}
+#emailButton {
+  color: #fff;
+  background-color: #F05F40;
+}
+#main {
+  padding-right:50px;
+}
+
+#status {
+  color: green !important;
+}
+
+.navbar {
+  background: #777;
+  color: #fff;
+  font-size: 16px;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: black !important;
+}
+
+.navbar a {
+  color: #fff !important;
+}

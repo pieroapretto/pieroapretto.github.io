@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="">
+    <meta name="author" content="Piero Pretto">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="article"/>
+    <meta property="og:description" content="I specialize in web accessibility and full-stack JavaScript application development."/>
+    <meta property="og:img" content="http://pieropretto.com/img/preview-min.jpg"/>
+    <meta property="og:img" content="img/preview-min.jpg"/>
+    <meta property="og:site_name" content="http://pieropretto.com"/>
+    <meta property="og:title" content="Piero Pretto - Web Developer"/>
+
+    <title>Piero Pretto - Help Me Build Sites For Charities</title>
+
+    <link rel="stylesheet" href="css/form.css">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap_mini.css">
+
+</head>
+
+
+<body ng-app="philanthropy_app">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top custom-nav" role="navigation">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <br>
+        <br>
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <br>
+            <br>
+            <h2>Help me find great charities.</h2>
+            <hr>
+            <div class="thumbnail">
+                <div ng-controller="MessageCtrl" role="form" title="contact submission form" id="formContainer">
+                  <form id="form" ng-submit="messageSubmit()" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div role="list" class="form-group">
+                      <label for="name">Name</label>
+                        <input role="listitem" ng-model="name" type="text" class="form-control" id="title" aria-describedby="name input" placeholder=" Mike Jones" pattern=".{3,}" required>
+                      <br>
+                      <label for="phonr">Phone</label>
+                        <input role="listitem" ng-model="phone" type="text" class="form-control" id="title" aria-describedby="phone input" placeholder=" 281-330-8004" pattern=".{9,}" required>
+                      <br>
+                      <label for="charity">Charity</label>
+                        <input role="listitem" ng-model="charity" type="text" class="form-control" id="title" aria-describedby="charity input" placeholder=" Meals On Wheels" pattern=".{3,}" required>
+                      <br>
+                      <label for="message">Message (Optional)</label>
+                        <textarea role="listitem" ng-model="message" type="text" class="form-control" id="description" rows="4" aria-describedby="message input" placeholder=" This place rocks because.." pattern=".{5,}"></textarea>
+                    </div>
+                    <br>
+                    <button id="emailButton" type="submit" class="btn btn-default">Submit</button><span id="status"></span>
+                  </form>
+                </div>
+                <br>
+              </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <hr>
+          <footer>
+              <div class="row">
+                  <div>
+                      <p>Copyright &copy; <a href="http://pieropretto.com">Piero Pretto 2017</a></p>
+                  </div>
+              </div>
+              <!-- /.row -->
+          </footer>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="js/philanthropy_form.js"></script>
+</body>
+
+</html>
