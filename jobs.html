@@ -13,8 +13,11 @@
     <style>
       nav { background: #000; }
       nav a { color: #fff; }
+      a { padding-right: 25px; }
       li { list-style: none; padding-bottom: 10px; }
       ul { margin: 10px 0px 10px 0px; padding: 0px; }
+      hr { border-top: 2px solid #f2f2f2; margin-bottom: 30px;}
+      #delete { color: red; }
     </style>
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top custom-nav" role="navigation">
@@ -42,7 +45,8 @@
               <h4><strong>{{job.title}}</strong></h4>
               <li>{{job.month}}.{{job.day}}.{{job.year}}</li>
               <li>{{job.description}}</li>
-              <li><a href={{job.website}}>see more</a></li>
+              <li><a href={{job.website}}>see more</a> <a id="delete" href="#/" ng-click="DeleteJob(job._id)">delete</a></li>
+              <hr>
             </ul>
             <br>
             <br>
