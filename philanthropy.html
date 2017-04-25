@@ -52,7 +52,7 @@
                 <div ng-controller="MessageCtrl" role="form" title="contact submission form" id="formContainer">
                   <form id="form" ng-submit="messageSubmit()" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div role="list" class="form-group">
-                      <label for="name">Name</label>
+                      <label for="name">Your Name</label>
                         <input role="listitem" ng-model="name" type="text" class="form-control" id="title" aria-describedby="name input" placeholder=" Mike Jones" pattern=".{3,}" required>
                       <br>
                       <label for="phonr">Phone</label>
@@ -60,6 +60,9 @@
                       <br>
                       <label for="charity">Charity</label>
                         <input role="listitem" ng-model="charity" type="text" class="form-control" id="title" aria-describedby="charity input" placeholder=" Meals On Wheels" pattern=".{3,}" required>
+                      <br>
+                      <label for="website">Current Website (Optional)</label>
+                        <input role="listitem" ng-model="website" type="text" class="form-control" id="title" aria-describedby="current website input" placeholder=" https://www.mealsonwheelscentraltexas.org" pattern=".{4,}">
                       <br>
                       <label for="message">Message (Optional)</label>
                         <textarea role="listitem" ng-model="message" type="text" class="form-control" id="description" rows="4" aria-describedby="message input" placeholder=" This place rocks because.." pattern=".{5,}"></textarea>

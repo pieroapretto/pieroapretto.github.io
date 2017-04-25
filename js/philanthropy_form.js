@@ -7,11 +7,12 @@ $('#title').on('input', function(){
 });
 
 class postObject {
-	constructor(name, phone, charity, message) {
+	constructor(name, phone, charity, website, message) {
 		this.upload_time = Date.now();
 		this.name = name;
-    	this.phone = phone;
-    	this.charity = charity;
+  	this.phone = phone;
+  	this.charity = charity;
+		this.website = website;
 		this.date = date.toLocaleDateString();
 		this.message = message;
 	}
@@ -21,9 +22,10 @@ app.controller('MessageCtrl', function($scope, $http){
 	$scope.name = "";
 	$scope.phone = "";
 	$scope.charity = "";
+	$scope.website = "";
 	$scope.message = "";
 	$scope.messageSubmit = function(){
-		var newObj = new postObject($scope.name, $scope.phone, $scope.charity, $scope.message);
+		var newObj = new postObject($scope.name, $scope.phone, $scope.charity, $scope.website, $scope.message);
 		newObj = JSON.stringify(newObj);
 
 		$scope.postNewObject(newObj);
