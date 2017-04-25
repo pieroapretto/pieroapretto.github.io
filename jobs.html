@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Piero Pretto - Jobs</title>
+      <!-- Bootstrap Core CSS -->
+      <link rel="stylesheet" href="css/bootstrap_mini.css">
+
+  </head>
+  <body ng-app="job_feed">
+    <style>
+      nav { background: #000; }
+      nav a { color: #fff; }
+      li { list-style: none; padding-bottom: 10px; }
+      ul { margin: 10px 0px 10px 0px; padding: 0px; }
+    </style>
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top custom-nav" role="navigation">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <!-- Page Content -->
+    <div class="container">
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2>Job Feed</h2>
+          <br>
+          <hr>
+          <main ng-controller="FeedCtrl">
+            <ul role="listitem" ng-repeat="job in jobListings">
+              <h4><strong>{{job.title}}</strong></h4>
+              <li>{{job.month}}.{{job.day}}.{{job.year}}</li>
+              <li>{{job.description}}</li>
+              <li><a href={{job.website}}>see more</a></li>
+            </ul>
+            <br>
+            <br>
+          </main>
+
+          <footer>
+              <div class="row">
+                  <div>
+                      <p>Copyright &copy; <a href="http://pieropretto.com">Piero Pretto 2017</a></p>
+                  </div>
+              </div>
+              <!-- /.row -->
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="js/job_feed.js"></script>
+  </body>
+</html>
