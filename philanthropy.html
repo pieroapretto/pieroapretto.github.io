@@ -53,19 +53,19 @@
                   <form id="form" ng-submit="messageSubmit()" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div role="list" class="form-group">
                       <label for="name">Your Name</label>
-                        <input role="listitem" ng-model="name" type="text" class="form-control" id="title" aria-describedby="name input" placeholder=" Mike Jones" pattern=".{3,}" required>
+                        <input role="listitem" ng-model="name" type="text" class="form-control" id="title" aria-describedby="name input" placeholder=" Mike Jones" pattern="[A-Za-z]{2,20}" required>
                       <br>
                       <label for="phonr">Phone</label>
-                        <input role="listitem" ng-model="phone" type="text" class="form-control" id="title" aria-describedby="phone input" placeholder=" 281-330-8004" pattern=".{9,}" required>
+                        <input role="listitem" ng-model="phone" type="text" class="form-control" id="title" aria-describedby="phone input" placeholder=" 281-330-8004" pattern="\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}" required>
                       <br>
                       <label for="charity">Charity</label>
-                        <input role="listitem" ng-model="charity" type="text" class="form-control" id="title" aria-describedby="charity input" placeholder=" Meals On Wheels" pattern=".{3,}" required>
+                        <input role="listitem" ng-model="charity" type="text" class="form-control" id="title" aria-describedby="charity input" placeholder=" Meals On Wheels" pattern="[A-Za-z0-9]{2,40}" required>
                       <br>
                       <label for="website">Current Website (Optional)</label>
                         <input role="listitem" ng-model="website" type="text" class="form-control" id="title" aria-describedby="current website input" placeholder=" https://www.mealsonwheelscentraltexas.org" pattern=".{4,}">
                       <br>
                       <label for="message">Message (Optional)</label>
-                        <textarea role="listitem" ng-model="message" type="text" class="form-control" id="description" rows="4" aria-describedby="message input" placeholder=" This place rocks because.." pattern=".{5,}"></textarea>
+                        <textarea role="listitem" ng-model="message" type="text" class="form-control" id="description" rows="4" aria-describedby="message input" placeholder=" This place rocks because.." pattern="[A-Za-z]{2,200}"></textarea>
                     </div>
                     <br>
                     <button id="emailButton" type="submit" class="btn btn-default">Submit</button><span id="status"></span>
