@@ -62,7 +62,7 @@
                         <h1 id="homeHeading">Piero A. Pretto</h1>
                         <hr id="homeHr">
                         <p id="homeParagraph">JavaScript wordsmith</p>
-                        <a href="#about" class="btn btn-primary btn-xl page-scroll" alt="scroll to about section">About Me</a>
+                        <a href="#portfolio" class="btn btn-primary btn-xl page-scroll" alt="scroll to about section">My Work</a>
                     </div>
                 </div>
             </div>
@@ -79,9 +79,6 @@
                     <div role="contentinfo">
                       <p class="text-faded wow fadeIn" data-wow-duration="1s">Hi! My name is Piero. I'm an instructional associate at Austin Coding Academy and a web accessibility consultant with an expertise in JavaScript frameworks.</p>
                     </div>
-                    <br>
-                    <br>
-                    <a href="#portfolio" class="page-scroll btn btn-default btn-xl sr-button wow fadeIn" data-wow-duration="1s" alt="scroll to portfolio section">My Work</a>
                 </div>
             </div>
         </section>
@@ -104,32 +101,32 @@
             <br>
             <div class="container-fluid">
                 <div role="list" class="row">
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center info-section">
                         <div role="listitem" class="service-box">
-                            <i role="presentation" class="devicon-html5-plain text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
+                            <i role="presentation" class="devicon-bootstrap-plain colored text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
                             <h3 class="wow fadeIn" data-wow-duration="1s">HTML &#38; CSS</h3>
-                            <p class="text-muted wow fadeIn" data-wow-duration="1s">I use Bootstrap and jQuery UI to create responsive web applications that comply with ADA Section 508 accessibility guidelines.</p>
+                            <p class="text-muted wow fadeIn" data-wow-duration="1s">Bootstrap and jQuery UI to build responsive web apps compliant with Section 508 accessibility guidelines.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center info-section">
                         <div role="listitem" class="service-box">
-                            <i role="presentation" class="devicon-angularjs-plain text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
-                            <h3 class="wow fadeIn" data-wow-duration="1s">JavaScript</h3>
-                            <p class="text-muted wow fadeIn" data-wow-duration="1s">AJAX and Angular's MVC framework allow me to preform complex data manipulations and dynamic views on the front-end.</p>
+                            <i role="presentation" class="devicon-react-original colored text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
+                            <h3 class="wow fadeIn" data-wow-duration="1s">React</h3>
+                            <p class="text-muted wow fadeIn" data-wow-duration="1s">React and Angular's MVC libraries to perform two-way data binding in the DOM.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center info-section">
                         <div role="listitem" class="service-box">
-                            <i role="presentation" class="devicon-backbonejs-plain text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
-                            <h3 class="wow fadeIn" data-wow-duration="1s">Backbone.js</h3>
-                            <p class="text-muted wow fadeIn" data-wow-duration="1s">To scale robust applications and handle client personalization, I ulitize the Backbone.js REST-consuming interface.</p>
+                            <i role="presentation" class="devicon-meteor-plain colored text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
+                            <h3 class="wow fadeIn" data-wow-duration="1s">Meteor</h3>
+                            <p class="text-muted wow fadeIn" data-wow-duration="1s">For rapid prototyping, I utilize the Meteor.js full-stack framework</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center info-section">
                         <div role="listitem" class="service-box">
-                            <i role="presentation" class="devicon-nodejs-plain text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
-                            <h3>Node.js</h3>
-                            <p class="text-muted wow fadeIn" data-wow-duration="1s">I use Express.js server-side framework to manage things behind the scenes and MongoDB for scability data accessiblity.</p>
+                            <i role="presentation" class="devicon-mongodb-plain colored text-primary sr-icons wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
+                            <h3>MongoDB</h3>
+                            <p class="text-muted wow fadeIn" data-wow-duration="1s">Express.js server-side framework connected to MongoDB for scalable data accessibility.</p>
                         </div>
                     </div>
                 </div>
@@ -155,17 +152,32 @@
                             </div>
                         </a>
                     </div>
-                    <div role="listitem" class="col-lg-4 col-sm-6">
-                        <a href="animations/animation_example1.html" class="portfolio-box" role="link" alt="link to JavaScript Animation demo">
-                            <img src="img/phone.gif"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="javascript animation app">
+                    <div role="listitem" class="col-lg-4 col-sm-6" id="portfolio-box-overflow">
+                        <a href="https://mircoscope-app.herokuapp.com" class="portfolio-box" role="link" alt="link to Meddit Social Network" target="_blank">
+                            <img src="img/meteor_app.jpg" id="overflow-img"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Meddit Social Network">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content" style="padding:50px;">
                                     <div class="project-category text-faded">
-                                        AT&#38;T Banner Advertisement
+                                        Meddit Social Network
                                     </div>
                                     <img class="line_break" src="img/line_break.png">
                                     <br>
-                                    <p class="project-description">HTML5 ad built exclusively with JavaScript &#38; CSS.</p>
+                                    <p class="project-description">Social networking application with a Reddit-like interface. Built with Meteor.js</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div role="listitem" class="col-lg-4 col-sm-6" id="portfolio-box-overflow">
+                        <a href="http://tyandslob.com" class="portfolio-box" role="link" alt="link to Angular.js Pragmatic Media App">
+                            <img src="img/tyandslob-min.jpg" id="overflow-img"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Pragmatic Media LLC App">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content" style="padding:50px;">
+                                    <div class="project-category text-faded">
+                                        Angular.js Media Library
+                                    </div>
+                                    <img class="line_break" src="img/line_break.png">
+                                    <br>
+                                    <p class="project-description">Ty and Slob produces humorous yet serious content on pop culture, trending topics in the internet and news, and much more.</p>
                                 </div>
                             </div>
                         </a>
@@ -186,6 +198,38 @@
                         </a>
                     </div>
                     <div role="listitem" class="col-lg-4 col-sm-6">
+                        <a href="https://brelloapp.herokuapp.com/login" class="portfolio-box" target="_blank" role="link" alt="link to Node.js Brello App">
+                            <img src="img/brello2-min.jpg"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="brello app">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="portfolio-box-caption-content" style="padding:50px;">
+                                        <div class="project-category text-faded">
+                                            Backbone.js Task Manager
+                                        </div>
+                                        <img class="line_break" src="img/line_break.png">
+                                        <br>
+                                        <p class="project-description">Utilizing mongoose population methods to link together JSON objects into custom lists. Passport.js give users secure profile.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div role="listitem" class="col-lg-4 col-sm-6">
+                        <a href="https://email-management-system-react.herokuapp.com" class="portfolio-box" role="link" alt="link to React Email Management System" target="_blank">
+                            <img src="img/emails.jpg" class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Email Management System">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content" style="padding:50px;">
+                                    <div class="project-category text-faded">
+                                        Email Management System
+                                    </div>
+                                    <img class="line_break" src="img/line_break.png">
+                                    <br>
+                                    <p class="project-description">ReactJS application for organizing and searching through email contacts.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div role="listitem" class="col-lg-4 col-sm-6">
                         <a href="https://switter-app.herokuapp.com" class="portfolio-box" role="link" alt="link to Backbone.js Switter App">
                             <img src="img/switter3-min.jpg" class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="backbone.js switter app">
                             <div class="portfolio-box-caption">
@@ -200,18 +244,48 @@
                             </div>
                         </a>
                     </div>
+                    <div role="listitem" class="col-lg-4 col-sm-6" id="portfolio-box-overflow">
+                        <a href="https://do25jktlf0ebn.cloudfront.net" class="portfolio-box" role="link" alt="link to Dynamic Jquery App" target="_blank">
+                            <img src="img/explorer2.jpg" id="overflow-img"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Dynamic Jquery App">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content" style="padding:50px;">
+                                    <div class="project-category text-faded">
+                                        Explorer Web Template
+                                    </div>
+                                    <img class="line_break" src="img/line_break.png">
+                                    <br>
+                                    <p class="project-description">Dynamic client-side template built with JQuery. Demonstrates navigation UI, content pagination and image carousels.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div role="listitem" class="col-lg-4 col-sm-6" id="portfolio-box-overflow">
+                        <a href="https://d2sa9gmneawnbm.cloudfront.net" class="portfolio-box" role="link" alt="link to Commercial Responsive Web Template" target="_blank">
+                            <img src="img/serpent-vpn.jpg" id="overflow-img"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Commercial Responsive Web Template">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content" style="padding:50px;">
+                                    <div class="project-category text-faded">
+                                        Responsive HTML & CSS
+                                    </div>
+                                    <img class="line_break" src="img/line_break.png">
+                                    <br>
+                                    <p class="project-description">Mobile-responsive commercial web template built without any third-party CSS libraries or JavaScript.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     <div role="listitem" class="col-lg-4 col-sm-6">
                         <a href="heminotes/heminotes_main/index.html" class="portfolio-box" target="_blank" role="link" alt="link to HemiNotes App">
                             <img src="img/heminotes3-min.jpg"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="heminotes">
                             <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content" style="padding:50px;">
-                                  <div class="project-category text-faded">
-                                      HemiNotes
-                                  </div>
-                                  <img class="line_break" src="img/line_break.png">
-                                  <br>
-                                  <p class="project-description">Share &#38; Compare Notes with classmates. This web application was built on Bootstrap.</p>
-                              </div>
+                                <div class="portfolio-box-caption-content" style="padding:50px;">
+                                    <div class="project-category text-faded">
+                                        HemiNotes
+                                    </div>
+                                    <img class="line_break" src="img/line_break.png">
+                                    <br>
+                                    <p class="project-description">Share &#38; Compare Notes with classmates. This web application was built on Bootstrap.</p>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -219,61 +293,29 @@
                         <a href="https://d12sh18v9174ct.cloudfront.net" class="portfolio-box" role="link" alt="link to Angular.js Address Book">
                             <img src="img/angular3-min.jpg"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Angular.js Address Book">
                             <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content" style="padding:50px;">
-                                  <div class="project-category text-faded">
-                                      AngularJS Address Book
-                                  </div>
-                                  <img class="line_break" src="img/line_break.png">
-                                  <br>
-                                  <p class="project-description">REST-consuming address book application built with Angular.js</p>
-                              </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div role="listitem" class="col-lg-4 col-sm-6">
-                        <a href="https://email-management-system-react.herokuapp.com" class="portfolio-box" role="link" alt="link to React Email Management System" target="_blank">
-                            <img src="img/emails.jpg" class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Email Management System">
-                            <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content" style="padding:50px;">
-                                  <div class="project-category text-faded">
-                                      Email Management System
-                                  </div>
-                                  <img class="line_break" src="img/line_break.png">
-                                  <br>
-                                  <p class="project-description">ReactJS application for organizing and searching through email contacts.</p>
-                              </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div role="listitem" class="col-lg-4 col-sm-6">
-                        <a href="https://brelloapp.herokuapp.com/login" class="portfolio-box" target="_blank" role="link" alt="link to Node.js Brello App">
-                            <img src="img/brello2-min.jpg"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="brello app">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                  <div class="portfolio-box-caption-content" style="padding:50px;">
-                                      <div class="project-category text-faded">
-                                          Backbone.js Task Manager
-                                      </div>
-                                      <img class="line_break" src="img/line_break.png">
-                                      <br>
-                                      <p class="project-description">Utilizing mongoose population methods to link together JSON objects into custom lists. Passport.js give users secure profile.</p>
-                                  </div>
+                                <div class="portfolio-box-caption-content" style="padding:50px;">
+                                    <div class="project-category text-faded">
+                                        Angular.js Address Book
+                                    </div>
+                                    <img class="line_break" src="img/line_break.png">
+                                    <br>
+                                    <p class="project-description">REST-consuming address book application built with Angular.js</p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div role="listitem" class="col-lg-4 col-sm-12" id="portfolio-box-overflow">
-                        <a href="http://tyandslob.com" class="portfolio-box" role="link" alt="link to Angular.js Pragmatic Media App">
-                            <img src="img/tyandslob-min.jpg" id="overflow-img"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="Pragmatic Media LLC App">
+                    <div role="listitem" class="col-lg-4 col-sm-6">
+                        <a href="animations/animation_example1.html" class="portfolio-box" role="link" alt="link to JavaScript Animation demo">
+                            <img src="img/phone.gif"  class="img-responsive wow fadeInUp" data-wow-duration="1s" alt="javascript animation app">
                             <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content" style="padding:50px;">
-                                  <div class="project-category text-faded">
-                                      Angular.js Media Library
-                                  </div>
-                                  <img class="line_break" src="img/line_break.png">
-                                  <br>
-                                  <p class="project-description">Ty and Slob produces humorous yet serious content on pop culture, trending topics in the internet and news, and much more.</p>
-                              </div>
+                                <div class="portfolio-box-caption-content" style="padding:50px;">
+                                    <div class="project-category text-faded">
+                                        AT&#38;T Banner Advertisement
+                                    </div>
+                                    <img class="line_break" src="img/line_break.png">
+                                    <br>
+                                    <p class="project-description">HTML5 ad built exclusively with JavaScript &#38; CSS.</p>
+                                </div>
                             </div>
                         </a>
                     </div>
