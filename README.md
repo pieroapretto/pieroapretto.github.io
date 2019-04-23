@@ -1,3 +1,3 @@
 # Portfolio site
 
-Samples of my development work - [pieropretto.com](http://pieropretto.com).
+Samples of my development work - [pieroprettojs.com](http://pieroprettojs.com).
