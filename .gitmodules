@@ -1,0 +1,3 @@
+[submodule "pragmatic_media_app"]
+	path = pragmatic_media_app
+	url = https://github.com/ASTPMeetup/Pragmatic-Media-LLC---Media-App.git
